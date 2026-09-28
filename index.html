@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMIGO - Autonomía y Monitoreo Inteligente para la Gestión Operativa de la Salud</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="logo">AMIGO</div>
+    <ul class="nav-links">
+      <li><a href="#problema">Problema</a></li>
+      <li><a href="#solucion">Solución</a></li>
+      <li><a href="#desglose">Diseño</a></li>
+      <li><a href="#mercado">Grupo Objetivo</a></li>
+      <li><a href="#modelo">Modelo & Escalabilidad</a></li>
+    </ul>
+    <button class="cta-button nav-btn">Solicitar Demo</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge-pill hero-badge">Modelo de Negocio Inclusivo & HealthTech</span>
+      <h1 class="hero-title">Salud de alta precisión.<br><span class="highlight">Donde sea, sin importar si hay internet.</span></h1>
+      <p class="hero-subtitle">El primer sistema biomédico portátil con Inteligencia Artificial local (On-Device AI) diseñado para democratizar el diagnóstico médico preventivo en Querétaro y México.</p>
+      <div class="hero-buttons">
+        <button class="cta-button">Conoce la Propuesta</button>
+        <button class="secondary-button">Especificaciones Técnicas</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección 1: El Problema -->
+  <section id="problema" class="content-section">
+    <div class="container">
+      <span class="badge-pill">Diagnóstico Territorial</span>
+      <h2 class="section-heading">La brecha de salud en Querétaro</h2>
+      <p class="section-description">Mientras la Zona Metropolitana goza de infraestructura médica de primer nivel, en las comunidades rurales del Semidesierto (Peñamiller, Tolimán, Cadereyta) y de la Sierra Gorda (Pinal de Amoles, Jalpan, San Joaquín, Landa de Matamoros), así como en zonas periurbanas, la población enfrenta una barrera crítica de acceso a la salud.</p>
+
+      <div class="cards-grid three-columns">
+        <div class="info-card">
+          <div class="card-icon">⚠️</div>
+          <h3>Detección Tardía</h3>
+          <p>Acceder a un electrocardiograma o prueba metabólica requiere citas con meses de anticipación en la capital, provocando que padecimientos crónicos se detecten en etapas irreversibles o de urgencia médica.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-icon">💸</div>
+          <h3>Altos Costos de Traslado</h3>
+          <p>Para un agricultor o artesano, viajar a un hospital implica pagar pasajes, alimentos, hospedaje y perder días de trabajo, haciendo que la prevención sea un lujo inaccesible.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-icon">📡</div>
+          <h3>Brecha Digital</h3>
+          <p>Las soluciones digitales convencionales fracasan al depender de conectividad a internet de alta velocidad o requerir smartphones de gama alta fuera del alcance popular.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights / Solución -->
+  <section id="solucion" class="highlights-section">
+    <div class="container">
+      <span class="badge-pill">Promesa de Valor</span>
+      <h2 class="section-heading text-center">Salud preventiva al alcance de tu mano</h2>
+      <div class="cards-grid">
+        
+        <div class="feature-card main-card">
+          <img src="dispositivo.jpg" alt="Dispositivo AMIGO" class="card-img-top">
+          <div>
+            <span class="badge-pill">On-Device AI</span>
+            <h3>Diagnóstico Inteligente e Inmediato</h3>
+            <p>Algoritmos de IA integrados directamente en el procesador emiten pre-análisis situacionales y recomendaciones preventivas en segundos, funcionando al 100% en zonas sin red o señal celular.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <span class="badge-pill">Sincronización Híbrida</span>
+          <h3>Telemedicina Certificada (&lt;24h)</h3>
+          <p>En cuanto el equipo detecta red, los datos se sincronizan con un médico especialista para validar el informe e instruir seguimiento vía WhatsApp o SMS.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="badge-pill">Impacto Social</span>
+          <h3>-70% en Costos Globales</h3>
+          <p>Elimina viajes costosos a la capital y ofrece pruebas preventivas mediante un esquema popular, justo y cercano a la comunidad.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección con Efecto Barrido de Imágenes y Desglose Técnico -->
+  <section id="desglose" class="explode-section">
+    <h2 class="section-heading text-center">Míralo a detalle.</h2>
+    <p class="instruction text-center">Tecnología no invasiva y ergonomía adaptada a la vida diaria</p>
+    
+    <div class="device-container">
+      
+      <!-- Imagen 1: Pantalla -->
+      <div class="layer layer-screen">
+        <img src="imagen_pantalla.jpg" alt="Pantalla HD OLED" class="product-img-isolated">
+        <span class="badge">Pantalla Curve OLED</span>
+        <h3>Lectura Clara y Continua</h3>
+        <p>Visualización directa de constante vitales: presión arterial (sistólica/diastólica), estimación de glucosa en sangre y mensajes cortos de orientación inmediata.</p>
+      </div>
+
+      <!-- Imagen 2: Procesador -->
+      <div class="layer layer-chip">
+        <img src="imagen_chip.jpg" alt="Chip Neural" class="product-img-isolated">
+        <span class="badge">Procesador AI</span>
+        <h3>Microchip de Bajo Consumo</h3>
+        <p>Procesamiento local de alertas biométricas. Si detecta valores críticos, activa un protocolo claro de actuación o primeros auxilios sin necesitar conexión.</p>
+      </div>
+
+      <!-- Imagen 3: Sensores -->
+      <div class="layer layer-sensors">
+        <img src="imagen_sensores.jpg" alt="Sensores Ópticos" class="product-img-isolated">
+        <span class="badge">Matriz de Sensores</span>
+        <h3>Medición No Invasiva</h3>
+        <p>Biosensores ópticos basados en fotopletismografía (PPG) e impedancia bioeléctrica que leen parámetros biológicos sin pinchazos ni agujas.</p>
+      </div>
+
+      <!-- Imagen 4: Correa / Ergonomía -->
+      <div class="layer layer-strap">
+        <img src="imagen_correa.jpg" alt="Ensamble Ergonómico" class="product-img-isolated">
+        <span class="badge">Grado Médico e IP68</span>
+        <h3>Diseño Rudo y Ergonómico</h3>
+        <p>Ensamble suave e hipoalergénico resistente al agua y polvo, pensado para el uso continuo de adultos mayores o trabajadores del campo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección 2: Grupo Objetivo y Compradores -->
+  <section id="mercado" class="content-sectionAlt">
+    <div class="container">
+      <span class="badge-pill">Ecosistema Inclusivo</span>
+      <h2 class="section-heading">Grupo Objetivo y Clientes</h2>
+      
+      <div class="cards-grid three-columns margin-top-md">
+        <div class="info-card border-accent">
+          <h3>👥 Usuarios Finales</h3>
+          <p class="small-text"><strong>Consumidores Vulnerables:</strong></p>
+          <ul class="styled-list">
+            <li>Población de municipios serranos y semidesérticos con acceso limitado a clínicas.</li>
+            <li>Familias periurbanas y trabajadores informales sin seguro social (IMSS/ISSSTE).</li>
+            <li>Pacientes crónicos (diabetes, hipertensión) y cuidadores familiares.</li>
+          </ul>
+        </div>
+
+        <div class="info-card border-accent">
+          <h3>🤝 Agentes Comunidades</h3>
+          <p class="small-text"><strong>Socios Locales de Distribución:</strong></p>
+          <ul class="styled-list">
+            <li>Líderes de colonia, tenderos, responsables de farmacias de barrio y jóvenes.</li>
+            <li>Capacitados como "Embajadores de la Salud" para operar los kits biométricos.</li>
+            <li>Generan ingresos mediante comisiones directas y esquemas de recompensas.</li>
+          </ul>
+        </div>
+
+        <div class="info-card border-accent">
+          <h3>🏛️ Compradores (B2B / B2G)</h3>
+          <p class="small-text"><strong>Clientes Institucionales:</strong></p>
+          <ul class="styled-list">
+            <li><strong>Gobiernos y DIF (B2G):</strong> Financiamiento de jornadas preventivas y "Casetas Vitales" públicas.</li>
+            <li><strong>Empresas e Industria (B2B):</strong> Programas de salud ocupacional para trabajadores de campos y parques industriales.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 3: Sector y Modelo de Ingresos -->
+  <section id="modelo" class="content-section">
+    <div class="container">
+      <div class="grid-two-sides">
+        <div>
+          <span class="badge-pill">Modelo de Negocio</span>
+          <h2 class="section-heading">Sector & Modelo Operativo</h2>
+          <p class="text-body">Ubicado en el sector de <strong>Salud Digital (HealthTech)</strong> y <strong>Tecnología Médica Inclusiva</strong>, el modelo asegura sostenibilidad financiera sin perder el impacto social:</p>
+          
+          <div class="feature-item">
+            <h4>1. Micropagos Asequibles</h4>
+            <p>El paciente paga una cuota popular por estudio que cubre insumos, paga la comisión del agente local y mantiene la plataforma médica.</p>
+          </div>
+
+          <div class="feature-item">
+            <h4>2. Subsidio Cruzado Corporativo (B2B / B2G)</h4>
+            <p>Los contratos de salud ocupacional con industrias y licitaciones públicas gubernamentales financian los kits en comodato y subsidian las pruebas en la Sierra Gorda.</p>
+          </div>
+
+          <div class="feature-item">
+            <h4>3. Infraestructura Pública ("Caseta Vital")</h4>
+            <p>Módulos de medición pública instalados en plazas comunitarias y DIF para la toma de signos vitales gratuita o de muy bajo costo.</p>
+          </div>
+        </div>
+
+        <div class="roadmap-box">
+          <span class="badge-pill">Estrategia de Crecimiento</span>
+          <h3>Plan de Escalabilidad Proyectado</h3>
+          
+          <div class="step-card">
+            <span class="step-num">Fase 1</span>
+            <div>
+              <strong>Piloto Regional (Año 1)</strong>
+              <p>Pinal de Amoles, Tolimán y Peñamiller. 20 Agentes comunitarios y 2,500 estudios preventivos.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">Fase 2</span>
+            <div>
+              <strong>Consolidación Estatal (Años 2-3)</strong>
+              <p>18 municipios de Querétaro. 150 Agentes activos y 25,000 estudios anuales con alianzas B2B/B2G.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">Fase 3</span>
+            <div>
+              <strong>Expansión Regional (Años 4-5)</strong>
+              <p>Réplica en Guanajuato, San Luis Potosí e Hidalgo. Red de +500 agentes y +100,000 diagnósticos anuales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estadísticas / Impacto -->
+  <section id="impacto" class="stats-section">
+    <div class="stats-container">
+      <div class="stat-box">
+        <span class="stat-number" data-target="98">0</span><span class="stat-symbol">%</span>
+        <p>Precisión biométrica garantizada</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="24">0</span><span class="stat-symbol">h</span>
+        <p>Respuesta médica certificada</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="100">0</span><span class="stat-symbol">%</span>
+        <p>Operatividad Offline con IA</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="70">0</span><span class="stat-symbol">%</span>
+        <p>Ahorro en gastos de traslado</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer con Autores -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-title">PROYECTO AMIGO — Querétaro, México</p>
+      <div class="authors-section">
+        <p class="authors-label">EQUIPO DE DESARROLLO Y AUTORES:</p>
+        <p class="author-name">JOSE MANUEL HERNANDEZ PACHECO</p>
+        <p class="author-name">MARTHA ISABEL MARTINEZ PEREZ</p>
+        <p class="author-name">OCTAVIO DAVID PEREZ MENDEZ</p>
+      </div>
+      <p class="copyright">&copy; 2026 Universidad del Valle de México — Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
